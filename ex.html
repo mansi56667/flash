@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<title>ex</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body {
+    margin: 0;
+}
+
+body,h1,h2,h3,h4,h5 {
+font-family: "Raleway", sans-serif;
+}
+
+ .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ .nav li a {
+    display: block;
+    color: white;
+    padding: 50px 70px;
+    text-decoration: none;
+	font-size: 18px;
+	
+}
+
+
+
+.nav li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+}
+
+.third img{
+margin-bottom: -6px; opacity: 0.8; cursor: pointer
+}
+
+
+.third img:hover{
+opacity: 1
+}
+
+img{
+    width: 33%;
+    height: auto;
+    float: left; 
+}
+
+.row{
+  padding-left: 25%;
+  }
+  
+  
+  .pagination {
+    display: inline-block;
+	padding-left: 45%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #000;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #000; color: white;}
+
+
+.content{
+   text-align:justify!important;
+   max-width:980px;
+   margin:auto;
+}
+
+.mid{
+   color:#fff!important;
+   background-color:#616161!important;
+   text-align: center;
+   padding-top:32px!important;padding-bottom:32px!important;
+   padding-left: 30%;
+}
+
+
+.me{
+   padding-left: 140px;
+   padding-right: 0 px;
+   }
+ 
+ .white{
+   color:#000!important;background-color:#fff!important
+   }
+   
+   
+  .bar{
+  padding:4px 8px!important;
+  text-align:center;
+  background-color: grey;
+  }
+  
+  .button{
+    border: none;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 8px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	padding-top: 40;
+	margin-top: 20px;
+}
+
+  .button5 {
+    background-color: mediumseagreen;
+    color: black;
+    
+}
+
+.button5:hover {
+    background-color: seagreen;
+    color: white;
+	
+}
+
+
+.row-padding{
+  display: table;
+  display: inline-block;
+  }
+  
+  
+  .column{
+  background-color:#ccc;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  color:#000!important;background-color:#fff!important;
+  opacity:0.60;
+  }
+  
+  .column:hover{opacity:1}
+  
+  .padding-16{
+  padding-top:16px!important;
+  padding-bottom:16px!important;
+  padding-right: 80px;
+  padding-left: 80px;
+  }
+  
+  .padding-32{
+     padding-top:32px!important;
+  padding-bottom:32px!important;
+  background-color: black;
+  padding-right: 80px;
+  padding-left: 80px;
+  }
+  
+  .table{
+  list-style-type:none;
+  padding:0;margin:0;
+  background-color:#ccc;
+  color:#000!important;
+  background-color:#fff!important;
+  opacity:0.60;
+  }
+  
+  .table:hover{
+  opacity: 1;
+  }
+ 
+ 
+ .btn{
+  color:#000!important;
+  background-color:#fff!important;
+  padding:12px 24px!important;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  
+  }
+  
+  .btn:hover{
+  color:#000!important;
+  background-color:#ccc!important;
+  }
+  
+  
+   
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+   
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+	color: black;
+	
+}
+
+.contact{
+   color:#000!important;
+   background-color:#f1f1f1!important;
+   
+   padding-top:32px!important;padding-bottom:32px!important;
+   padding-left: 40%;
+   padding-right: 10%;
+}
+
+
+.division{
+ float: left;
+ width: 33.33%;
+ }
+ 
+ .footer{
+  padding-top:16px!important;
+  padding-bottom:16px!important;
+  padding-left: 10px;
+ }
+.footer:hover{
+color:#fff!important;
+background-color:#000!important;
+ }
+</style>
+<body>
+<!--sidebar-->
+<div class ="nav">
+<nav>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Portfolio</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About us</a></li>
+</ul>
+</nav>
+</div>
+<!--images-->
+<div class="row">
+    <div class="third">
+      <img src="ex1.jpg" style="width:33%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="ex2.jpg" style="width:33%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="ex3.jpg" style="width:33%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+    </div>
+
+    <div class="third">
+      <img src="ex4.jpg" style="width:33%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="ex5.jpg" style="width:33%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="ex6.jpg" style="width:33%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+	
+	<div class="third">
+      <img src="ex1.jpg" style="width:33%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="ex2.jpg" style="width:33%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="ex3.jpg" style="width:33%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+    </div>
+</div>
+<!--panigation-->
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+<!--about me-->
+<div class="mid">
+ <h4><b>About Me</b></h4>
+ 
+ <div class="content" style="max-width:600px">
+<h4>My Name</h4>
+      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+	  
+	  <p>mail: example@example.com</p>
+      <p>tel: 5353 35531</p>
+	  <hr>
+	  <h4 style="padding-top:16px!important;padding-bottom:16px!important">Technical Skills</h4>
+	  <p style="letter-spacing:4px">Photography</p>
+	  <div class="white">
+	  <div class="w3-container bar" style="width:95%">95%
+	  </div>
+	  </div>
+	  <p style="letter-spacing:4px">Web Design</p>
+	  
+	 <div class="white">
+	  <div class="w3-container bar" style="width:85%">85%
+	  </div>
+	  </div>
+	  
+	   <p style="letter-spacing:4px">Photoshop</p>
+	  
+	 <div class="white">
+	  <div class="w3-container bar" style="width:80%">80%
+	  </div>
+	  </div>
+	  <button class="button button5">Download Resume</button>
+     <hr>
+	 <h4 style="padding-bottom:16px;padding-top:16px;"> How much I charge</h4>
+	 <!--BELOW HOW MCH I CHARGE-->
+	 
+	 <div class="row-padding">
+	 <div style="margin-bottom:16px; float:left;width:100%">
+	   <ul  class="table">
+	    <li class="padding-32" style="color:#fff!important;background-color:#000!important;font-size:24px!important">Basic</li>
+            <li class="padding-16">Web Design</li>
+            <li class="padding-16">Photography</li>
+            <li class="padding-16">5GB Storage</li>
+            <li class="padding-16">Mail Support</li>
+            <li class="padding-16">
+              <h2>$ 10</h2>
+			  <span style= "opacity:0.60">per month</span>
+			</li>
+			<li style="color:#000!important;background-color:#f1f1f1!important;padding-top:24px!important;padding-bottom:24px!important;padding-left:55px">
+              <button class="btn">Sign Up</button>
+            </li>
+	    </ul>
+	   </div>
+	 </div>
+	 
+	 
+	 
+	 
+	 <div class="row-padding" style="margin-left: 40px">
+	 <div style="margin-bottom:16px; float:left;width:100%">
+	   <ul  class="table">
+	    <li class="padding-32" style="color:#fff!important;background-color:#000!important;font-size:24px!important">Basic</li>
+            <li class="padding-16">Web Design</li>
+            <li class="padding-16">Photography</li>
+            <li class="padding-16">5GB Storage</li>
+            <li class="padding-16">Mail Support</li>
+            <li class="padding-16">
+              <h2>$ 10</h2>
+			  <span style= "opacity:0.60">per month</span>
+			</li>
+			<li style="color:#000!important;background-color:#f1f1f1!important;padding-top:24px!important;padding-bottom:24px!important;padding-left:55px">
+              <button class="btn">Sign Up</button>
+            </li>
+	    </ul>
+	   </div>
+	 </div>
+</div>
+</div>	 
+	 
+	 <!--contact section-->
+   <div class="contact" style="">
+     <h4 style="text-align: center"><b>Contact Me</b></h4>
+     <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+
+
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	
+	 <label for="email id">E-mail</label>
+    <input type="text" id="lname" name="lastname" placeholder="your email id..">
+	
+	<label for="message">Message</label>
+    <input type="text" id="lname" name="lastname" placeholder="write something about you..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+ </div>
+<!--footer section-->
+
+<footer class="w3-container padding-32" style="color:#000!important;background-color:#9e9e9e!important;padding-left: 28%">
+<div class="row-padding">
+ <div class="division" style="padding-left: 30% width: 400px">
+  <h3>INFO</h3>
+  <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
+  </div>
+  
+  <div class="division">
+   <h3>BLOG POSTS</h3>
+    <ul style="list-style-type:none;padding:0;margin:0">
+	 <li class="footer">
+	   <img src="ex8.jpg" style="width: 50px;float:left;margin-right:16px">
+	  <b> <span>Lorem</span></b><br>
+	   <span>Sed mattis nunc</span>
+	 </li>
+	 <hr>
+	 <li class="footer">
+	  <img src="ex9.jpg" style="width: 50px;float:left;margin-right:16px">
+	   <b><span>Ipsum</span></b><br>
+	   <span>Preas tinci sed</span>
+	  </li>
+	</ul>
+  </div>
+</div>
+
+<div class="division">
+<h3>POPULAR TAGS</h3>
+<p>
+ 
+</footer>
+  
+	 
+ 	 
+   
+</body>
